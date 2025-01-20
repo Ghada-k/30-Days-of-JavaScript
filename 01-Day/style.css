@@ -39,24 +39,24 @@ body{
     z-index: 999;
 }
 
-.clock.hour,
-.clock.min,
-.clock.sec{
+.clock .hour,
+.clock .min,
+.clock .sec {
     position: absolute;
 }
-.clock.hour,
+.clock .hour,
 .hr{
     width: 160px;
     height: 160px;
 }
 
-.clock.min,
+.clock .min,
 .mn{
     width: 190px;
     height: 190px;
 }
 
-.clock.sec,
+.clock .sec,
 .sc{
     width: 230px;
     height: 230px;
@@ -84,8 +84,8 @@ body{
     content: "";
     position: absolute;
     width: 4px;
-    height: 90px;
-    background: #3e3e3e;
+    height: 120px;
+    background: #74ab50;
     border-radius: 6px 6px 0 0;
     z-index: 12;
 }
@@ -94,7 +94,7 @@ body{
     content: "";
     position: absolute;
     width: 2px;
-    height: 90px;
+    height: 150px;
     background: #adadad;
     border-radius: 6px 6px 0 0;
     z-index: 13;
