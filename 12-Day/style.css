@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body{
+    font-family: Arial, sans-serif;
+    background-color: black;
+    color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.container{
+    background-color: rgb(112, 112, 112);
+    height: 160px;
+    width: 60px;
+    border-radius: 50px;
+    margin-top: 50px;
+}
+
+.container .light {
+    background-color: rgb(0, 0, 0);
+    width: 40px;
+    height: 40px;
+    border-radius: 80px;
+    margin: 9px;
+   
+}
+
+.light.red {
+    background-color: rgb(255, 0, 0);
+    box-shadow: 0 0 20px 5px #c0392b;
+}
+
+.light.yellow {
+    background-color: rgb(246, 255, 0);
+    box-shadow: 0 0 20px 5px #c0b62b;
+}
+
+.light.green {
+    background-color: rgb(21, 255, 0);
+    box-shadow: 0 0 20px 5px #44c02b;
+}
