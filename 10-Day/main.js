@@ -1,17 +1,13 @@
-const quoteContainer = document.getElementById('quotecontainer')
-const quotebtn = document.getElementById('quotebtn')
+const quoteContainer = document.getElementById('quoteContainer')
+const quoteBtn = document.getElementById('quoteBtn')
 
-const API_URL = 'https://api.quotable.io/random'
+const API_URL = 'https://quotes-api-self.vercel.app/quote'
 
-getQuote()
 
 async function getQuote(){
-    const res = await fetch(API_URL, {
-        headers: {
-            'Accept':'application/json'
-        }
-    })
-    const data = await res.json()
+    const response = await fetch(API_URL)
+    const data = await response.json()
+    console.log(data)  
     quoteContainer.innerHTML = data.quote
 }
-quotebtn.addEventListener("click", getQuote)
+quoteBtn.addEventListener('click' , getQuote)
