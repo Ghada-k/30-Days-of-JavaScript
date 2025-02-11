@@ -11,7 +11,7 @@ function addTag(e){
 
     let tag = e.target.value.trim()
 
-    if(tag.lenght < 1 || tags.includes(tag)){
+    if(tag.length < 1 || tags.includes(tag)){
         e.target.value = ""
         return
     }
@@ -19,7 +19,7 @@ function addTag(e){
 
     let tagItem = document.createElement('div')
     tagItem.classList.add('item')
-    tagItem.innerHTML = `<span class = "delet-btn" onclick="deleteTag(this, '${tag}">
+    tagItem.innerHTML = `<span class = "delet-btn" onclick="deleteTag(this, '${tag}')">
     &times;
     </span>
     <span>${tag}</span>`;
