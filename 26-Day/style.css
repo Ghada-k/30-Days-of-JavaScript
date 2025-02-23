@@ -1,0 +1,62 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    background: black;
+    color: white;
+    overflow: hidden;
+}
+
+h2{
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+#wrapper-toast{
+    position: absolute;
+    width: 350px;
+    padding: 20px;
+    right: 0;
+    top: 5%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: #fdfdfd;
+    border-radius: 5px;
+    color: black;
+    transform: translateX(400px);
+}
+
+#wrapper-toast i {
+    font-size: 40px;
+    color: #0052af;
+}
+
+#wrapper-toast button{
+    position: absolute;
+    right: 20px;
+    top: 5px;
+    border: none;
+    background: transparent;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.btn-toast{
+    padding: 20px 50px;
+    background: #ffffff;
+    color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 8px;
+    font-size: 20px;
+    cursor: pointer;
+}
